@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Items</title>
+</head>
+<body>
+    <h1>All Items</h1>
+    <ul>
+        {% for item in items %}
+            <li>{{ item.item_name }} - {{ item.price }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Back To Home Page</a>
+</body>
+</html>
